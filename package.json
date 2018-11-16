@@ -12,6 +12,7 @@
     "react-redux": "^5.1.1",
     "react-router": "^4.3.1",
     "react-scripts": "2.1.1",
+    "redux-devtools-extension": "^2.13.5",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
@@ -35,7 +36,7 @@
     "test:lint:scss": "stylelint --config=.stylelintrc '**/*.scss'",
     "test:lint": "run-s test:lint:**",
     "test:unit": "react-scripts test --env=jsdom",
-    "test": "run-s test:**",
+    "test": "run-s test:unit",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
