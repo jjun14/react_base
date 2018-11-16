@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+import imageStore from 'images/imageStore';
 import styles from './App.module.scss';
 
 const App = () => (
   <div className={styles.App}>
     <header className={styles.header}>
-      <img src={logo} className={styles.logo} alt="logo" />
+      <img src={imageStore.logo} className={styles.logo} alt="logo" />
       <p>Edit src/App.js and save to reload.</p>
       <a
         className={styles.link}
