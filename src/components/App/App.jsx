@@ -3,7 +3,7 @@ import imageStore from 'images/imageStore';
 import styles from './App.module.scss';
 
 const App = () => (
-  <div className={styles.App}>
+  <div className={styles.container}>
     <header className={styles.header}>
       <img src={imageStore.logo} className={styles.logo} alt="logo" />
       <p>Edit src/App.js and save to reload.</p>

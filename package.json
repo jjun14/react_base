@@ -22,6 +22,9 @@
     "redux-devtools-extension": "^2.13.5",
     "redux-thunk": "^2.3.0"
   },
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
+  },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
       "eslint --fix",
