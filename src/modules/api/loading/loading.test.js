@@ -14,7 +14,7 @@ describe('reducer: loading', () => {
       .toReturnState(result);
   });
 
-  ['SUCCESSFUL', 'FAILED', 'NOT_CALLED'].forEach(type => {
+  ['SUCCESS', 'FAILED'].forEach(type => {
     test(`it handles *_${type} actions`, () => {
       const action = { type: `FETCH_TEST_${type}` };
       const result = { FETCH_TEST: false };
