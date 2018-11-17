@@ -29,10 +29,12 @@ module.exports = {
     'ecmaFeatures': {
       'jsx': true,
     }
-  }
+  },
   'settings': {
-    "import/resolver": {
-      "babel-plugin-root-import": {}
+    'import/resolver': {
+      'node': {
+        'paths': ['node_modules', 'src']
+      }
     }
   }
 }

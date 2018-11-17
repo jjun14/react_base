@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-plugin-root-import": "^6.1.0",
     "connected-react-router": "^5.0.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
@@ -16,6 +17,7 @@
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
     "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "react-test-renderer": "^16.6.3",
     "redux": "^4.0.1",
@@ -23,7 +25,9 @@
     "redux-thunk": "^2.3.0"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [

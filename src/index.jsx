@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { Route, Switch } from 'react-router';
 import { ConnectedRouter } from 'connected-react-router';
 import App from 'components/App/App';
-import { history, store } from 'redux/configureStore';
+import { history, store } from 'configureStore';
 import './index.scss';
 import * as serviceWorker from './serviceWorker';
 
@@ -13,7 +13,7 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <div>
         <Switch>
-          <Route exact path="/" render={() => <App />} />
+          <Route exact path="/" component={App} />
         </Switch>
       </div>
     </ConnectedRouter>

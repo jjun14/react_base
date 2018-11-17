@@ -1,8 +1,8 @@
 export default function reducer(state = {}, action = {}) {
   const { type } = action;
-  const matches = /(.*)_(IN_PROGRESS|SUCCESSFUL|FAILED|NOT_CALLED)/.exec(type);
+  const matches = /(.*)_(IN_PROGRESS|SUCCESS|FAILED)/.exec(type);
 
-  // not a *_IN_PROGRESS / *_SUCCESSFUL / *_FAILED / *_NOT_CALLED actions, so we ignore them
+  // not a *_IN_PROGRESS / *_SUCCESSFUL / *_FAILED , so we ignore them
   if (!matches) {
     return state;
   }
